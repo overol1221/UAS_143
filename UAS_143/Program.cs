@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace UAS_143
 {
+    //Make class
     class Node
     {
         public int rollNumber;
@@ -14,6 +15,7 @@ namespace UAS_143
         public int tanggal;
         public Node next;
     }
+    //Make class for circular
     class CircularList
     { 
         Node LAST;
@@ -23,6 +25,7 @@ namespace UAS_143
             LAST = null;
         }
 
+        //Make a menu
         public void addNode()
         {
             int rollNo, Jmlh, Date;
@@ -58,7 +61,7 @@ namespace UAS_143
                 LAST.next = newNode;
                 return;
             }
-            
+            //Make a notification
             if (Date <= LAST.tanggal)
             {
                 if (LAST != null && Date == LAST.tanggal)
